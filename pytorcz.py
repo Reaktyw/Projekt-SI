@@ -108,9 +108,9 @@ with torch.no_grad():
     model(new_iris)
 
 #Save NN model
-torch.save(model.state_dict(), 'iris_model.pt')
+torch.save(model.state_dict(), 'Nauka/iris_model.pt')
 #Load saved model
 new_model = Model()
-new_model.load_state_dict(torch.load('iris_model.pt', weights_only=True))
+new_model.load_state_dict(torch.load('Nauka/iris_model.pt', weights_only=True))
 
 print(new_model.eval())
