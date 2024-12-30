@@ -5,7 +5,7 @@
 # import matplotlib.pyplot as plt
 # import scipy
 
-# file = 'C:/Wszystko nowe/Visual Studio Code/VisualStudioCode/Projekty/moj_stuff/dzwieki/the night sky.wav'
+# file = 'C:/Wszystko nowe/Visual Studio Code/VisualStudioCode/Projekty/moj_stuff/dzwieki/adas.wav'
 # rate, aud_data = scipy.io.wavfile.read(file)
 # # From here down, everything else can be the same
 # len_data = len(aud_data)
@@ -90,7 +90,7 @@
 
 
 
-#--------------ZROBIENIE Z GŁOSÓW LISTY---------------
+# #--------------ZROBIENIE Z GŁOSÓW LISTY---------------
 
 import os
 import numpy as np
