@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import glob
+import re
 import matplotlib.pyplot as plt
 
 import os
@@ -262,6 +263,7 @@ if __name__ == "__main__":
 
 
     csv_files = glob.glob('fft_wyniki/fft_result_*.csv')
+    csv_files = sorted(csv_files, key=lambda x: int(re.search(r'fft_result_(\d+)', x).group(1)))
 
     X = []
     y = []

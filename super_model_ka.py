@@ -22,6 +22,8 @@ def Labels():
             labels.append("Kobieta")
         elif "meski" in name:
             labels.append("Mężczyzna")
+        else:
+            labels.append("Mężczyzna")
     return labels
 
 
@@ -85,7 +87,7 @@ if __name__ == "__main__":
         Fourier()
     
     # Ścieżka do modelu
-    model_path = r"AutogluonModels\ag-20250122_221024"
+    model_path = r"AutogluonModels\ag-20250124_014210"
     predictor = TabularPredictor.load(model_path)
 
     # Folder z plikami do predykcji
@@ -132,6 +134,7 @@ if __name__ == "__main__":
             print(f"{csv_files[i]}   Kobieta   {labels[i]}")
         elif predicted_class == 1:
             print(f"{csv_files[i]}   Mężczyzna  {labels[i]}")
+
 
 
     # Oblicz dokładność
