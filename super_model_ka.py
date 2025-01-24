@@ -22,8 +22,6 @@ def Labels():
             labels.append("Kobieta")
         elif "meski" in name:
             labels.append("Mężczyzna")
-        else:
-            labels.append("Mężczyzna")
     return labels
 
 
