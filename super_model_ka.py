@@ -1,4 +1,3 @@
-import os
 import pandas as pd
 from autogluon.tabular import TabularPredictor
 import os
@@ -9,7 +8,6 @@ import numpy as np
 import glob
 import re
 from sklearn.preprocessing import StandardScaler
-import matplotlib.pyplot as plt
 
 
 def Labels():
@@ -85,8 +83,9 @@ if __name__ == "__main__":
         Fourier()
     
     # Ścieżka do modelu
-    model_path = r"AutogluonModels\ag-20250124_014210"
-    predictor = TabularPredictor.load(model_path)
+    model_path = r"AutogluonModels/ag-20250124_014210"
+    #predictor = TabularPredictor.load(model_path)
+    predictor = TabularPredictor.load(model_path, require_py_version_match=False)
 
     # Folder z plikami do predykcji
     csv_files = glob.glob('fft_wyniki_nowe/fft_result_*.csv')
